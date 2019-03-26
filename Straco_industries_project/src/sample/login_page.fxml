@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <AnchorPane layoutX="434.0" layoutY="23.0" prefHeight="554.0" prefWidth="351.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Label layoutX="154.0" layoutY="78.0" prefHeight="32.0" prefWidth="43.0" text="Login" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="316.0" onAction="#login_button_click" onKeyTyped="#login_button_click" prefHeight="32.0" prefWidth="312.0" ripplerFill="#1c1c1c" style="-fx-background-color: #304ffe;" text="Login" />
+            <Label layoutX="145.0" layoutY="373.0" text="sign up" />
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="11.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ic_account_circle_black_48dp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="11.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ic_lock_black_48dp.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="userName" layoutX="48.0" layoutY="186.0" prefHeight="26.0" prefWidth="279.0" promptText="username/email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passWord" layoutX="48.0" layoutY="265.0" onAction="#login_button_click" prefHeight="26.0" prefWidth="279.0" promptText="password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="120.0" fitWidth="389.0" layoutX="57.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/straco_logo_project.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

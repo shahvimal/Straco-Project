@@ -1,0 +1,77 @@
+.jfx-text-field, .jfx-password-field {
+    -fx-prompt-text-fill: WHITE;
+    -jfx-focus-color: WHITE;
+    -jfx-unfocus-color: WHITE;
+    -fx-text-inner-color: WHITE;
+}
+.pane{
+	-fx-background-radius: 10  10 10 10;
+}
+.pane:hover{
+	-fx-effect: dropshadow(three-pass-box, #607D8B, 20, 0, 0, 0);
+}
+
+.inp{
+    -fx-prompt-text-fill: black;
+    -jfx-focus-color: black;
+    -jfx-unfocus-color: black;
+    -fx-text-inner-color: black;
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #455A64;
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 35;
+  -fx-alignment: center-left;
+  -fx-background-color: #FFFFFF;
+  /*-fx-border-color: #29292D;*/
+  -fx-text-fill: #607D8B;
+  -fx-alignment: CENTER_LEFT;
+
+}
+.table-row-cell:selected {
+   -fx-background-color: #FF5722;
+   -fx-text-background-color:  #FF5722;
+
+
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive( #FF5722,80%);
+
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb{
+    -fx-background-color:derive( #CFD8DC,40%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #FF5722,40%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}

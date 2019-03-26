@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListCell?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="106.0" prefHeight="307.0" prefWidth="266.0" style="-fx-background-color: #424242;">
+         <children>
+            <JFXListCell fx:id="products_label" layoutX="17.0" layoutY="14.0" onMouseClicked="#ProductsClicked" prefHeight="70.0" prefWidth="232.0">
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/product.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="47.0" prefWidth="140.0" text="Products" />
+                     </children>
+                  </HBox>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </JFXListCell>
+            <JFXListCell fx:id="request_label" layoutX="17.0" layoutY="79.0" onMouseClicked="#RequestClicked" prefHeight="70.0" prefWidth="232.0">
+               <graphic>
+                  <HBox prefHeight="22.0" prefWidth="207.0">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/sending-from-the-inbox.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="49.0" prefWidth="154.0" text="Request" />
+                     </children>
+                  </HBox>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </JFXListCell>
+            <JFXListCell fx:id="payments_label" layoutX="17.0" layoutY="149.0" onMouseClicked="#PaymentsClicked" prefHeight="70.0" prefWidth="232.0">
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="46.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/payment-method.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="46.0" prefWidth="160.0" text="Payments" />
+                     </children>
+                  </HBox>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </JFXListCell>
+            <JFXListCell fx:id="dealers_label" layoutX="17.0" layoutY="219.0" onMouseClicked="#DealersClicked" prefHeight="68.0" prefWidth="232.0">
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="43.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/users-group_128dp.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="42.0" prefWidth="154.0" text="Dealers">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </JFXListCell>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="-2.0" prefHeight="104.0" prefWidth="900.0" style="-fx-background-color: #dd2c00;" text="Dealer" />
+      <AnchorPane layoutX="247.0" layoutY="106.0" prefHeight="492.0" prefWidth="650.0" style="-fx-background-color: #424242;">
+         <children>
+            <Label fx:id="main_label" alignment="CENTER" graphicTextGap="6.0" layoutX="19.0" prefHeight="58.0" prefWidth="631.0" style="-fx-background-color: #ffff;" text="Label">
+               <effect>
+                  <Glow />
+               </effect>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <JFXListView fx:id="list" layoutX="19.0" layoutY="57.0" prefHeight="434.0" prefWidth="631.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
